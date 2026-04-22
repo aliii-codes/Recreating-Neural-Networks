@@ -41,3 +41,33 @@ output = (# Neuron 1
           inputs[3]*weights3[3]+
           bias3)
 print(output)
+
+
+"""A Layer of Neurons with a better structure"""
+
+inputs = [1, 2, 3, 2.5]
+
+# Each inner list = one neuron's weights (one weight per input)
+weights = [[0.2, 0.8, -0.5, 1],
+           [0.5, -0.91, 0.26, -0.5],
+           [-0.26, -0.27, 0.17, 0.87]]
+
+# One bias per neuron
+biases = [2, 3, 0.5]
+
+layer_outputs = []
+
+# Loop through each neuron (its weights + bias)
+for neuron_weights, neuron_bias in zip(weights, biases):
+    neuron_output = 0
+
+    # Multiply each input by its corresponding weight and accumulate
+    for n_input, weight in zip(inputs, neuron_weights):
+        neuron_output += n_input * weight  # sum(inputs * weights)
+
+    neuron_output += neuron_bias  # add bias
+    layer_outputs.append(neuron_output)  # store this neuron's output
+
+print(layer_outputs)  # [4.8, 1.21, 2.385]
+
+# The ​zip​()​ function lets us iterate over multiple iterables (lists in this case) simultaneously. 
