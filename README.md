@@ -53,8 +53,9 @@ By the end of this project, the goal is to have built:
 | 4 | Activation Functions (ReLU, Softmax) | ✅ Done |
 | 5 | Calculating Network Error with Loss | ✅ Done |
 | 6 | Introducing Optimization | ✅ Done |
-| 7 | Derivatives | 🔄 In Progress |
-
+| 7 | Derivatives | ✅ Done |
+| 8 | Gradients Partial Derivatives and the Chain Rule | ✅ Done |
+| 7 | Backpropagation | 🔄 In Progress |
 ---
 
 ## 🧩 What's Been Built
