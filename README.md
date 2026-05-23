@@ -81,6 +81,15 @@ By the end of this project, the goal is to have built:
 - Concept of loss-guided adjustment
 - Derivatives chapter in progress — foundation for gradient descent
 
+### Derivatives
+
+- **Slope of the loss curve** — *“if I nudge this weight a tiny bit, how much does the loss change?”*
+- **Gradient** = a vector of those slopes for every weight & bias
+- **Chain rule** passes that slope backwards through the layers → that’s backpropagation
+- **Weight update**: `weight -= learning_rate * gradient` (step opposite the slope to go downhill)
+- Random search is dead. Slope * direction * tiny step. Rinse, repeat. ✨
+
+
 ---
 
 ## 🛠️ Stack
