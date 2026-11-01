@@ -10,3 +10,6 @@ fashion_mnist_images/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+
+# images downloaded by chapter 22
+02_basic_neurons/chapter_22/*.png
